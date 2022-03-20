@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/3b43eec5d5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    <!-- Inicio Header -->
+    <header>
+        <div class="container header">
+            <div class="header-logo">
+                <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+            </div>
+            <div class="header-store">
+                <div class="search">
+                    <input type="search" name="search" id="searchBar" placeholder="Producto...">
+                    <a href="#" class="search-button">
+                        <i class="fa-solid fa-lg fa-magnifying-glass"></i>
+                    </a>
+                </div>
+                <a href="javascript:modal()" onclick="" class="shopping-cart">
+                    <i class="fa-solid fa-lg fa-cart-shopping"></i>
+                    <div class="contador" id="productosTotal">0</div>
+                </a>
+                <div class="store-modal" id="modal">
+                    <div class="container-modal">
+                        <div class="header">
+                            <p>Carrito</p>
+                            <a href="javascript:closeModal()">
+                                <i class="fa-solid fa-lg fa-xmark"></i>
+                            </a>
+                        </div>
+                        <div class="content-1">
+                            <p>Producto</p>
+                            <p>Precio</p>
+                            <p>Cantidad</p>
+                            <p></p>
+                        </div>
+                        <div class="content-2" id="contenedorCarrito">
+                            <!-- Se cargan los productos seleccionados -->
+                        </div>
+                        <div class="content-3">
+                            <p>Total: $<span id="precioTotal"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-navbar">
+                    <li class="active"><a href="#">INICIO</a></li>
+                    <li><a href="productos.html">PRODUCTOS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+            </div>
+        </div>
+    </header>
+    <!-- Fin Header -->
+
+    <!-- Inicio Main -->
+    <main>
+        <div class="container main">
+            <div class="index-bienvenida">
+                <div class="banner">
+                    <img src="assets/img/catalogo/banner.jpg" alt="" srcset="">
+                    <div>
+                        <h1>- PRALINE -</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="index-catalogo">
+                <h2>¿Qué vendemos?</h2>
+                <div class="catalogo">
+                    <div>
+                        <img src="assets/img/catalogo/tortas.jpg" alt="TORTAS">
+                        <p>TORTAS</p>
+                    </div>
+                    <div>
+                        <img src="assets/img/catalogo/brownies.jpg" alt="BROWNIES">
+                        <p>BROWNIES</p>
+                    </div>
+                    <div>
+                        <img src="assets/img/catalogo/cookies.jpg" alt="COOKIES">
+                        <p>COOKIES</p>
+                    </div>
+                </div>
+                <p id="ref">Mirá todos nuestros productos haciendo click <a href="productos.html">aquí</a>.</p>
+            </div>
+            <div class="index-frecuentes">
+                <h2>Preguntas frecuentes:</h2>
+                <div>
+                    <p id="consulta"><b>¿Hacen envíos?</b></p>
+                    <p id="respuesta">Por el momento no tenemos envios, los pedidos se pasan a retirar por el local de 15 a 19hs.</p>
+                </div>
+                <div>
+                    <p id="consulta"><b>¿Cómo se abona el pedido?</b></p>
+                    <p id="respuesta">Los pedidos se pueden pagar con transferencia bancaria con 48hs de anticipación o con tarjeta de crédito.</p>
+                </div>
+                <div>
+                    <p id="consulta"><b>¿Con cuanta anticipación se toman los pedidos?</b></p>
+                    <p id="respuesta">Los pedidos los tomamos con 72hs hábiles de anticipación.</p>
+                </div>
+                <div>
+                    <p id="consulta"><b>Hice un pedido y no recibí el mail de confirmación para retirarlo.</b></p>
+                    <p id="respuesta">Te recomendamos chequear en “correo no deseado” ya que suelen ir a esa casilla directamente.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Fin Main -->
+
+    <!-- Inicio footer -->
+    <footer>
+        <div class="container footer">
+            <p>© 2022, Praline Cakes. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!-- Fin Footer -->
+
+    <!-- Inicio Javascript -->
+    <!-- <script src="js/ciclos.js"></script> -->
+    <script src="js/productos.js"></script>
+    <script src="js/carrito.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- Fin Javascript -->
+</body>
+</html>

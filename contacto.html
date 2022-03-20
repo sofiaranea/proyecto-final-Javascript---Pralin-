@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/3b43eec5d5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Inicio Header -->
+    <header>
+        <div class="container header">
+            <div class="header-logo">
+                <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+            </div>
+            <div class="header-store">
+                <div class="search">
+                    <input type="search" name="search" id="searchBar" placeholder="Producto...">
+                    <a href="#" class="search-button">
+                        <i class="fa-solid fa-lg fa-magnifying-glass"></i>
+                    </a>
+                </div>
+                <a href="javascript:modal()" onclick="" class="shopping-cart">
+                    <i class="fa-solid fa-lg fa-cart-shopping"></i>
+                    <div class="contador" id="productosTotal">0</div>
+                </a>
+                <div class="store-modal" id="modal">
+                    <div class="container-modal">
+                        <div class="header">
+                            <p>Carrito</p>
+                            <a href="javascript:closeModal()">
+                                <i class="fa-solid fa-lg fa-xmark"></i>
+                            </a>
+                        </div>
+                        <div class="content-1">
+                            <p>Producto</p>
+                            <p>Precio</p>
+                            <p>Cantidad</p>
+                            <p></p>
+                        </div>
+                        <div class="content-2" id="contenedorCarrito">
+                            <!-- Se cargan los productos seleccionados -->
+                        </div>
+                        <div class="content-3">
+                            <p>Total: $<span id="precioTotal"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-navbar">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="productos.html">PRODUCTOS</a></li>
+                    <li class="active"><a href="#">CONTACTO</a></li>
+            </div>
+        </div>
+    </header>
+    <!-- Fin Header -->
+
+    <!-- Inicio Main -->
+    <main>
+        <div class="container main">
+            <div class="contacto">
+                <h3>Dejanos acá tu mensaje y te responderemos a la brevedad.</h3>
+                <div class="form">
+                    <form action="" method="post">
+                        <div>
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="nombre" required>
+                        </div>  
+                        <div>
+                            <label for="name">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="asunto">Asunto:</label>
+                            <input type="text" id="asunto" name="asunto" required>
+                        </div>
+                        <div>
+                            <label for="consulta">Consulta:</label>
+                            <textarea name="consulta" id="consulta" cols="30" rows="10" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Fin Main -->
+
+    <!-- Inicio footer -->
+    <footer>
+        <div class="container footer">
+            <p>© 2022, Praline Cakes. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!-- Fin Footer -->
+</body>
+</html>

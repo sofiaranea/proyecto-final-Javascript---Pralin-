@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap'); /*font-family: 'Secular One', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap'); /*font-family: 'Dosis', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap'); /*font-family: 'M PLUS Rounded 1c', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&display=swap'); /*'Advent Pro', sans-serif;*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* Inicio header */
+header {
+    height: 60px;
+    background-color: #3cc3ad;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo a img {
+    width: 6rem;
+}
+
+
+
+    /* Inicio barra busqueda */
+    .header-store {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-store i {
+        color: #fbfbfb;
+        margin: 0.6rem;
+        cursor: pointer;
+    }
+    .header-store i:hover {
+        color: #6e2aec;
+        margin: 0.6rem;
+        cursor: pointer;
+    }
+
+    .search {
+        background-color: #ffffff;
+        border-radius: 2rem;
+        padding: 0.3rem;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .search-button {
+        border-radius: 50%;
+        background-color: #3cc3ad;
+        padding: 0.15rem;
+        color: #000000;
+        width: 1.8rem;
+        height: 1.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: right;
+        text-decoration: none;
+    }
+    .search input {
+        background: none;
+        border: none;
+        outline: none;
+        float: left;
+        padding: 0 6px;
+        color: #000000;
+        font-size: 1em;
+        transition: 0.4s;
+        line-height: 1.5rem;
+        width: 10rem;
+        width: 20rem;
+    }
+
+    .shopping-cart {
+        position: relative;
+        z-index: 2;
+    }
+    .contador {
+        border-radius: 50%;
+        width: 1rem;
+        height: 1rem;
+        background-color: #fbfbfb;
+        position: absolute;
+        z-index: 1;
+        right: 1px;
+        top: -10px;
+        color: #222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Quicksand', sans-serif;    
+        text-align: center;
+        border: 0.1px solid rgb(0, 0, 0);
+    }
+    /* Fin barra de busqueda */
+
+
+
+.header-navbar {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: flex-end;
+    margin-right: 1rem;
+    list-style-type: none;
+}
+.header-navbar li {
+    margin: 0.5rem;
+    text-decoration: none;
+    padding: 0.6rem;
+    background-color: #3cc3ad;
+    border-radius: 3px;
+    border-bottom: 3px solid #6e2aec;
+}
+.header-navbar li:hover {
+    background-color: #6e2aec;
+}
+.header-navbar li a {
+    text-decoration: none;
+    color: #fbfbfb;
+    font-family: 'Secular One', sans-serif;
+    font-size: 0.8em;
+}
+.header-navbar .active {
+    background-color: #26a38e;
+    border-bottom: 3px solid #6e2aec;
+}
+/* Fin header */
+
+
+
+/* Inicio main */
+.main {
+    text-align: center;
+}
+/* Fin main */
+
+
+
+/* Inicio footer */
+footer {
+    height: 80px;
+    background-color: #3cc3ad;
+    bottom: 0;
+    width: 100%;
+}
+.footer {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.footer p {
+    text-align: center;
+    font-size: 1.5em;
+}
+/* Fin footer */
+
+
+
+/* Inicio ventana modal */
+.store-modal {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(34, 34, 34, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    margin: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 200ms ease;
+}
+.container-modal {
+    position: relative;
+    width: 40rem;
+    background-color: white;
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    margin: auto;
+    background-color: rgb(233, 230, 230);
+    overflow: hidden;
+    box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+}
+/* #5324a0 */
+.container-modal .header {
+    height: 3rem;
+    background-color: #75c5b8;
+    overflow: hidden;
+    border-radius: 0rem 0rem 0.3rem 0.3rem;
+    box-shadow: 1px 2px 7px rgba(0,0,0,0.6);
+}
+.container-modal .header p {
+    margin-left: 1rem;
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+.container-modal .header a {
+    margin-right: 0.5rem;
+}
+.container-modal .header a i {
+    color: #fff;
+    padding: 0.5rem;
+}
+.container-modal .header a i:hover {
+    color: rgb(167, 164, 164);
+}
+.container-modal .content-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+.container-modal .content-2 .carritoProd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #222;
+    font-family: 'Secular One', sans-serif;
+    height: 3.2rem;
+    padding-left: 0.5rem;
+    border-left: 0.5rem solid #3cc3ad; 
+}
+.container-modal .content-2 .carritoProd:hover {
+    border-left: 0.5rem solid #1a8f7b;
+    background-color: #dddddd;
+    transition: all .2s;
+}
+.container-modal .content-2 .carritoProd .del {
+    margin-right: 0.5rem;
+    padding: 0.1rem;
+    background-color: #754e99;
+    border-radius: 50%;
+}
+.container-modal .content-2 .carritoProd .del i {
+    color: #fff;
+}
+.container-modal .content-2 .carritoProd .del:hover {
+    background-color: #643f86;
+}
+.container-modal .content-3 {
+    font-family: 'Quicksand', sans-serif;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+/* Fin ventana modal */
+
+
+
+/* Inicio cartas de productos */
+.productos {
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+}
+.productos h2 {
+    font-size: 3rem;
+    font-family: 'Dosis', sans-serif;
+    padding: 1.5rem;
+}
+.lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Barlow', sans-serif;
+} 
+.producto {
+    width: 15rem;
+    min-height: 430px;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    margin: 0.5rem;
+    box-shadow: 3px 2px 6px rgba(0,0,0,0.3);
+}
+.producto:hover {
+    outline: 1px solid #1b1b55;
+}
+.producto img {
+    margin-bottom: 1rem;
+    width: 15rem;
+    object-fit: cover
+}
+.producto h5 {
+    padding: 0.8rem;
+    font-size: 1.2em;
+}
+.producto p {
+    float: left;
+    padding: 0.5rem;
+}
+.producto a {
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+}
+.producto i {
+    color: #6e2aec;
+    margin: 0 auto;
+}
+.producto i:hover {
+    color: #41227a;
+}
+.producto span {
+    padding: 1rem;
+    float: right;
+}
+.producto div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.disponible {
+    color: #07af23;
+}
+.no-disponible {
+    color: #db0f0f;
+    margin-top: 2rem;
+}
+.invisible {
+    display: none;
+}
+/* Fin cartas de productos */
+
+
+
+
+/*Inicio contacto*/
+.contacto {
+    padding: 2rem;
+}
+.contacto h3 {
+    font-size: 1.8rem;
+    max-width: 40rem;
+    margin: 0 auto;
+    font-family: 'Secular One', sans-serif;
+}
+.form {
+    max-width: 30rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.form label {
+    float: left;
+    font-size: 1.5em;
+    font-family: 'Dosis', sans-serif;
+}
+.form input, textarea {
+    width: 100%;
+    border: 1px solid #999999;
+    outline: none;
+    height: 3rem;
+    font-size: 1.3em;
+    font-family: 'Dosis', sans-serif;
+}
+.form textarea {
+    height: 10rem;
+}
+.form form div {
+    margin: 1.5rem;
+}
+.form input:focus {
+    border: 1px solid #222;
+}
+.form button {
+    width: 100%;
+    height: 3rem;
+    border-radius: 0;
+    outline: none;
+    background-color: #1a8f7b;
+    text-decoration: none;
+    border: none;
+    font-size: 1.5rem;
+    font-family: 'Dosis', sans-serif;
+    color: #fff;
+}
+.form button:hover {
+    background-color: #157262;
+}
+
+
+
+
+/* Inicio index */
+.index-frecuentes, .index-catalogo, .index-bienvenida {
+    margin-bottom: 4rem;
+}
+.index-catalogo h2 {
+    font-size: 3rem;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.index-catalogo #ref {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+}
+.index-catalogo p a {
+    color: #157262;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+.index-catalogo .catalogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.index-catalogo .catalogo div{
+    max-width: 300px;
+    height: 400px;
+    margin: 1rem;
+}
+.index-catalogo .catalogo img {
+    width: 300px;
+}
+.index-catalogo .catalogo p {
+    font-size: 3.5rem;
+    font-family: 'Dosis', sans-serif;
+}
+
+
+.index-frecuentes {
+    padding: 1rem;
+}
+.index-frecuentes h2 {
+    font-size: 3em;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.index-frecuentes div {
+    margin-top: 1.5rem;
+}
+.index-frecuentes #consulta {
+    text-align: left;
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.5em;
+}
+.index-frecuentes #respuesta {
+    text-align: left;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.2em;
+} 
+
+.index-bienvenida .banner{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.index-bienvenida .banner img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.index-bienvenida .banner div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 3em;
+    color: #41227a;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+
+
+
+/* Inicio mediaQuery */
+@media (min-width: 400px) and (max-width: 800px) {
+    header {
+        height: auto;
+    }
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .producto {
+        width: 10rem;
+        min-height: 370px;
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+        margin: 0.5rem;
+        box-shadow: 3px 2px 6px rgba(0,0,0,0.3);
+    }
+    .producto img {
+        margin-bottom: 1rem;
+        width: 10rem;
+        object-fit: cover
+    }
+    .container-modal {
+        width: 24rem;
+    }
+    .container-modal .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .index-catalogo .catalogo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .index-bienvenida .banner{
+        height: 300px;
+    }
+    .index-bienvenida .banner img{
+        height: 300px;
+    }
+    .index-bienvenida .banner div {
+        font-size: 2em;
+    }
+    
+    
+}
+
+
+
